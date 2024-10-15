@@ -3,7 +3,7 @@ import 'package:final_exam/screen/splash/view/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
 Map<String,WidgetBuilder>app_routes={
-  "/":(c1)=>SplashScreen(),
-  "/home":(c1)=>HomeScreen(),
+  "/":(c1)=>const SplashScreen(),
+  "/home":(c1)=>const HomeScreen(),
 
 };

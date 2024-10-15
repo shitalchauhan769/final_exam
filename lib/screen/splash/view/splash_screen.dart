@@ -20,16 +20,14 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image(
-          image: const AssetImage("assets/image/img.png"),
-          height: MediaQuery.sizeOf(context).height,
-          width: MediaQuery.sizeOf(context).width,
-          fit: BoxFit.cover,
+    return const Center(
+      child: Image(
+        image: AssetImage("assets/image/img1.png"),
+        // height: MediaQuery.sizeOf(context).height,
+        // width: MediaQuery.sizeOf(context).width,
+        fit: BoxFit.cover,
 
-        )
-      ],
+      ),
     );
   }
 }

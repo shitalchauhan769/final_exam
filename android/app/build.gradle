@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.RecipeApp.final_exam"
+    namespace = "com.example.final_exam"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
