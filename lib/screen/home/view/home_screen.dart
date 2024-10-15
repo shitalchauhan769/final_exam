@@ -34,8 +34,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-
         title: const Center(child: Text("RecipeApp")),
+        actions: [
+          IconButton(onPressed: () {
+            Get.toNamed("/cart");
+
+          }, icon: const Icon(Icons.shopping_cart),),
+        ],
       ),
       body: Obx(
         () =>  ListView.builder(
@@ -60,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Row(
                             children: [
                               IconButton(
@@ -78,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   controller.getDataDB();
 
                                 },
-                                icon: const Icon(Icons.bookmark),
+                                icon: const Icon(Icons.delete),
                               )
                             ],
                           ),

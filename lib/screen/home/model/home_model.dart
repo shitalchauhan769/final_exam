@@ -1,6 +1,6 @@
 class HomeModel{
   String?  name,recipe;
-  int?id;
+  int? id;
 
 
   HomeModel({this.name, this.id, this.recipe});
